@@ -3,3 +3,33 @@ body{
     font-family: 'Roboto', sans-serif;
     /*comentario fuente font famyli google fonts*/
 }
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    /*background-color:black;*/
+    /*overflow:hidden;*/
+    padding: var(--padding-contenier);
+}
+p{
+    color:black;
+}
+
+:root{
+    --padding-contenier:50px 0px;
+    --color-title:#001A49;
+    /*al poner esto en la seudoclase root las podemos usar como variables*/
+}
+.hero{
+    width:100%;
+    height:100vh;/*100% del alto de la pantalla*/
+    min-height:600px;
+    max-height:800px;
+    position:relative;
+    display:grid;
+    position:relative;
+    grid-template-rows:100px 1fr;/*1fr dice que tome el csobrante de los 100px*/
+}
+.nav{
+    --padding-conteiner:0px;
+}
